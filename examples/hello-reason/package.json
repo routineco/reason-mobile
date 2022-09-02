@@ -1,20 +1,20 @@
 {
   "name": "hello-reason",
   "version": "0.0.0",
-  "esy": {
-    "build": "dune build @all"
-  },
-  "scripts": {
-    "start": "#{self.target_dir}/default/bin/hello.exe"
-  },
+  "esy": { "build": "dune build @all" },
+  "scripts": { "start": "#{self.target_dir}/default/bin/hello.exe" },
   "dependencies": {
-    "@opam/reason": "^3.7.0",
-    "@opam/dune": "*",
-    "@reason-native/console": "^0.1.0",
-    "@reason-native/pastel": "^0.3.0",
-    "ocaml": "4.12.x"
+    "@opam/dune": "2.9.3",
+    "ocaml": "4.12.x",
+    "@opam/lwt": "5.6.1"
   },
   "resolutions": {
-    "@esy-ocaml/reason": "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7"
+    "@esy-ocaml/reason":
+      "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7",
+    "mirage-crypto":"opam:0.8.4"
+  },
+  "devDependencies": {
+    "generate":
+      "github:EduardoRFS/reason-mobile:generate.json#7ba258319b87943d2eb0d8fb84562d0afeb2d41f"
   }
 }
