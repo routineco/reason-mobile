@@ -6,12 +6,14 @@
   "dependencies": {
     "@opam/dune": "2.9.3",
     "ocaml": "4.12.x",
-    "@opam/lwt": "5.6.1"
+    "@opam/lwt": "5.6.1",
+    "schematic": "*"
   },
   "resolutions": {
     "@esy-ocaml/reason":
       "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7",
-    "mirage-crypto":"opam:0.8.4"
+    "mirage-crypto":"opam:0.8.4",
+    "schematic": "git:git@gitlab.routine.co:routine/schematic.git:schematic.opam#d18836b8f3367c8e5e0cb8b1929f8f9b9de3b5de"
   },
   "devDependencies": {
     "generate":
